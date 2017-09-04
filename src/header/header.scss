@@ -1,0 +1,29 @@
+
+.header {
+  border: 1px solid grey;
+  background: dimgrey;
+  padding: .5rem;
+  padding-bottom: 0;
+  border-bottom: none;
+
+  a {
+    background: white;
+    padding: .5rem .75rem;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: 1px solid grey;
+    text-decoration: none;
+    font-weight: bold;
+    color: $tab-color;
+    background: $tab-bkgrnd;
+
+    &.active,
+    &:active {
+      background: white;
+      font-weight: bold;
+      background: white;
+      color: $tab-active-color;
+      border-bottom: none;
+    }
+  }
+}

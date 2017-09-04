@@ -1,0 +1,68 @@
+body {
+  font-family: "Helvetica Neue";
+}
+
+$tab-color: #ffffff;
+$tab-bkgrnd: #ababab;
+$tab-active-color: black;
+
+.flex {
+  display: flex;
+
+  &.expand {
+    flex: 1 1 auto;
+  }
+
+  &.shrink {
+    flex: 0 0 auto;
+  }
+
+  &.col {
+    flex-direction: column;
+  }
+}
+
+.page {
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.main-app {
+  //border: 1px solid blue;
+}
+
+.page {
+  //border: 3px solid red;
+}
+
+.sidebar {
+  margin-right: 1rem;
+  width: 10rem;
+  border: 1px solid grey;
+  background: #b9b9b9;
+  height: 100vh;
+
+  a {
+    background: white;
+    padding: .5rem .75rem;
+    padding-bottom: 5px;
+    border: 1px solid grey;
+    text-decoration: none;
+    font-weight: bold;
+    color: $tab-color;
+    background: $tab-bkgrnd;
+
+    &:first-child {
+      border-bottom: none;
+    }
+
+    &.active,
+    &:active {
+      background: white;
+      font-weight: bold;
+      background: white;
+      color: $tab-active-color;
+    }
+  }
+}
+
