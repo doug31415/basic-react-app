@@ -1,0 +1,22 @@
+.header {
+  border: 1px solid grey;
+  background: dimgrey;
+  padding: .5rem;
+  padding-bottom: 0;
+  border-bottom: none; }
+  .header a {
+    background: white;
+    padding: .5rem .75rem;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: 1px solid grey;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    background: #ababab; }
+    .header a.active, .header a:active {
+      background: white;
+      font-weight: bold;
+      background: white;
+      color: black;
+      border-bottom: none; }

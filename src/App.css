@@ -1,0 +1,38 @@
+body {
+  font-family: "Helvetica Neue"; }
+
+.flex {
+  display: flex; }
+  .flex.expand {
+    flex: 1 1 auto; }
+  .flex.shrink {
+    flex: 0 0 auto; }
+  .flex.col {
+    flex-direction: column; }
+
+.page {
+  padding: 1rem;
+  padding-left: 0; }
+
+.sidebar {
+  margin-right: 1rem;
+  width: 10rem;
+  border: 1px solid grey;
+  background: #b9b9b9;
+  height: 100vh; }
+  .sidebar a {
+    background: white;
+    padding: .5rem .75rem;
+    padding-bottom: 5px;
+    border: 1px solid grey;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    background: #ababab; }
+    .sidebar a:first-child {
+      border-bottom: none; }
+    .sidebar a.active, .sidebar a:active {
+      background: white;
+      font-weight: bold;
+      background: white;
+      color: black; }
